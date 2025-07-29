@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Hacker - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <h1>Hi, I'm Mr.Hacker 👨‍💻</h1>
+        <div class="logo-hacker">[ Mr.<span>Hacker</span> ]</div>
+
+
+        <p>I build modern, fast, and beautiful websites & apps.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer exploring everything in tech. I love turning ideas into functional digital
+            experiences.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>What I Do</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Modern websites using HTML, CSS, JS, and React.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile Apps</h3>
+                <p>Build Android/iOS apps with Flutter and React Native.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Clean, modern user interfaces with great experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <!-- Spinner -->
+    <div id="spinner" class="spinner hidden">
+        <div class="loader"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
